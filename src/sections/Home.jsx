@@ -7,7 +7,7 @@ import { FaBookOpen } from "react-icons/fa";
 function Home() {
     return (
         <section className="flex flex-col items-center gap-16 relative">
-            <p className="bg-gray-100 text-center rounded-full p-4 md:p-6">
+            <p className="bg-gray-100 dark:bg-spdarkbg text-center rounded-full p-4 md:p-6">
                 Live as if you were to die tomorrow. Learn as if you were to live forever.
             </p>
             {/* title */}
@@ -16,7 +16,7 @@ function Home() {
                 <span className="text-orange-400"> والتطوير </span> المهني
             </h2>
             {/* descriptions */}
-            <p className="text-secondary text-center leading-loose md:w-[70%]">
+            <p className="text-secondary dark:text-darksecondary text-center leading-loose md:w-[70%]">
                 نحن سوف اكاديمي مدرسة تعليمية خاصة لدينا الاعتماد المهني من الدولة الجزائرية نعمل على تطوير الطلاب بمختلف العلوم والمعارف سواء كانوا بمرحلة الدارسة او بعد اكمال مسارهم المهني والاكاديمي
             </p>
             {/* social media icons */}
@@ -39,14 +39,14 @@ function Home() {
                 
             </div>
             {/* decoration Icons */}
-            <span className="absolute -right-10 top-96  text-orange-400 p-1 bg-white rounded-lg shadow-md ">
+            <span className="absolute  right-2 top-[40%]  sm:right-0 sm:top-[35%] text-orange-400 p-1 bg-white dark:bg-spdarkbg rounded-lg shadow-md ">
                 <BsPalette size={40} />
             </span>
-            <span className="absolute -left-10 bottom-16  text-blue-400 p-1 bg-white rounded-lg shadow-md ">
+            <span className="absolute left-0  bottom-16  text-blue-400 p-1 bg-white dark:bg-spdarkbg rounded-lg shadow-md ">
                 <FaBookOpen size={36} />
             </span>
-            <div style={{boxShadow : "0 0  160px 100px #f9cbc2"}} className="absolute  z-[-1] -left-[5%] top-[20%] "></div>
-            <div style={{boxShadow : "0 0  160px 100px #f9cbc2"}} className="absolute  z-[-1] -right-[5%] bottom-[20%] "></div>
+            <div  className="absolute  z-[-1] -left-[5%] top-[20%] shadow-homeShaow dark:shadow-darkhomeShadow "></div>
+            <div  className="absolute  z-[-1] -right-[5%] bottom-[20%] shadow-homeShaow dark:shadow-darkhomeShadow  "></div>
 
         </section>
     );

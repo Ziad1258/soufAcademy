@@ -1,23 +1,34 @@
-* , *::before {
+*,
+*::before {
     margin: 0;
     padding: 0;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+html.dark {
+    background-color : #18181b;
+    color: #fff;
+}
+
 body {
     position: relative;
     direction: rtl;
-    min-width: 100vw;
     overflow-x: hidden;
-    margin: 0;
-    padding: 0;
+    
 }
+
 .navLink {
     transition: all 0.3s linear;
     position: relative;
 }
+
 .navLink.active {
     color: black;
 }
-.navLink::before   {
+
+.navLink::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -27,18 +38,21 @@ body {
     background-color: red;
     opacity: 0;
     transition: all 0.3s linear;
-    
+
 }
 
-.navLink:hover::before , .navLink.active::before {
+.navLink:hover::before,
+.navLink.active::before {
     display: block;
     opacity: 1;
     width: 100% !important;
 }
+
 section {
     min-height: 100vh;
-    padding: 3rem 0;
+    padding: 5rem 0;
 }
+
 .classLink {
     list-style-type: none;
     position: relative;
@@ -46,10 +60,46 @@ section {
 }
 
 .classLink::before {
-    content: '\2713'; /* Unicode character for checkmark */
+    content: '\2713';
+    /* Unicode character for checkmark */
     position: absolute;
     right: 0;
     top: 60%;
-    font-size: 16px; /* Adjust the size as needed */
+    font-size: 16px;
+    /* Adjust the size as needed */
     transform: translateY(-50%);
-  }
+}
+
+.prTitle {
+    position: relative;
+}
+
+.prTitle::before {
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: 0%;
+    width: calc(50% - 50px);
+    height: 2px;
+    background-color: blue;
+}
+.prTitle::after {
+    content: "";
+    position: absolute;
+    top: 60%;
+    right: 0%;
+    width: calc(50% - 50px);
+    height: 2px;
+    background-color: blue;
+}
+.prImage {
+    filter: grayscale(1);
+    transition: .3s linear;
+    &:hover {
+        filter: grayscale(0);
+        transform: scale(1.1);
+    }
+}
+footer {
+    direction: ltr;
+}
