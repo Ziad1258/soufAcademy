@@ -3,8 +3,8 @@ import { FaQuoteLeft } from "react-icons/fa";
 
 function About() {
   return (
-    <div className=" bg-gray-100 dark:bg-dark border-y dark:border-border-gray py-24">
-      <div className="container mx-auto px-4 flex flex-col gap-16">
+    <div id="about" className="bg-gray-100 dark:bg-dark border-y dark:border-close-btn-bg py-24">
+      <div className="container  mx-auto px-4 flex flex-col gap-16">
         <h1 className="text-2xl font-bold text-center prTitle">من نحن  </h1>
 
         <div className="flex flex-col gap-4 text-center relative">

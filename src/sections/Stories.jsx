@@ -2,7 +2,7 @@ import { storiesData } from "../data"
 import { Link } from "react-router-dom"
 function Stories() {
   return (
-    <section className="flex flex-col gap-12">
+    <section id="stories" className="flex flex-col gap-12">
       <h1 className="text-2xl text-center font-bold">
       حكايات و قصص نجاح
 

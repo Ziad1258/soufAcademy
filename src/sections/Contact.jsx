@@ -1,7 +1,7 @@
 
 function Contact() {
     return (
-        <section>
+        <section id="contact">
             <div className="container mx-auto px-4 flex flex-col gap-12">
                 <h1 className="text-2xl font-bold text-center">اتصل بنا   </h1>
                 <div className="flex flex-col lg:flex-row lg:items-center gap-12">

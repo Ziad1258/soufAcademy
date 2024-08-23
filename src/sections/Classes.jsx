@@ -13,7 +13,7 @@ function Classes() {
     }
 
     return (
-        <section className="flex flex-col gap-16">
+        <section id="classes" className="flex flex-col gap-16">
             <div className="flex flex-col gap-8">
                 <h1 className="text-2xl font-bold text-center">
                     ورشاتنا
@@ -44,8 +44,8 @@ function Classes() {
                                     return (
                                         <div key={index} className="">
                                             {myClass.content.length == 1 ?
-                                                <p className="pt-8 leading-loose text-secondary "> {el.text} </p>
-                                                : <li className="leading-loose  text-secondary pt-2 classLink "> {el.text} </li>
+                                                <p className="pt-8 leading-loose text-secondary dark:text-darksecondary "> {el.text} </p>
+                                                : <li className="leading-loose  text-secondary dark:text-darksecondary pt-2 classLink "> {el.text} </li>
 
                                             }
                                         </div>

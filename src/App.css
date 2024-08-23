@@ -16,6 +16,7 @@ body {
     position: relative;
     direction: rtl;
     overflow-x: hidden;
+    font-family: "cairo";
     
 }
 
@@ -25,7 +26,11 @@ body {
 }
 
 .navLink.active {
-    color: black;
+    color: inherit;
+}
+
+.navLink {
+    position: relative;
 }
 
 .navLink::before {
@@ -35,18 +40,18 @@ body {
     right: 0;
     width: 0;
     height: 3px;
-    background-color: red;
+    background-color: blue;
     opacity: 0;
-    transition: all 0.3s linear;
-
+    transition: width 0.3s linear;
 }
 
-.navLink:hover::before,
-.navLink.active::before {
-    display: block;
+.navLink:hover::before , .navLink.active::before {
+    width: 100%;
     opacity: 1;
-    width: 100% !important;
 }
+
+
+
 
 section {
     min-height: 100vh;

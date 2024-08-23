@@ -19,4 +19,4 @@ function ThemeSwitcher() {
 
 }
 
-export default ThemeSwitcher
+export default ThemeSwitcher;

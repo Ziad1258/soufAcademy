@@ -24,6 +24,11 @@ export const navLinks = [
         name: "services",
     },
     {
+        label: "ورشاتنا",
+        url: "#classes",
+        name: "classes",
+    },
+    {
         label: "القصص",
         url: "#stories",
         name: "stories",

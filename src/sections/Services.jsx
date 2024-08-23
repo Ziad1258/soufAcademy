@@ -3,7 +3,7 @@ import servicesImage from "../assets/servicesImage.jpg";
 
 function Services() {
   return (
-    <section className="flex flex-col gap-16">
+    <section id="services" className="flex flex-col gap-16">
       <div className="flex flex-col items-center gap-8">
         <h1 className="text-2xl font-bold">
           خدماتنا

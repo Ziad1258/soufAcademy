@@ -35,15 +35,15 @@ function MobileNavBar() {
   }, 200)
 
   return (
-    <nav className="h-[70px]    md:hidden sticky  left-0 right-0 top-0  z-10  ">
+    <nav className="h-[70px]    lg:hidden sticky  left-0 right-0 top-0  z-10  ">
       {/* Logo + BarIcon */}
       <div style={{ display: showNav ? 'flex' : "none" }} className="   h-full shadow-myShadow dark:shadow-mydarkShaow dark:bg-dark bg-white  ">
         <div className="flex justify-between  container mx-auto px-8 md:px-0 
 ">
-          <div className="flex items-center gap-4 ">
+          <a href="#" className="flex items-center gap-4 ">
             <img className="max-h-[50px]" src={LogoImg} alt="Logo" />
             <h2 className="text-2xl font-bold  block">سوف أكاديمي</h2>
-          </div>
+          </a>
           <div className=" flex">
           <ThemeSwitcher />
 
